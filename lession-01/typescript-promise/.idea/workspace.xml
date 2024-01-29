@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b2be0b2-f8da-4ade-b0af-ff4bcd20e369" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/.idea/typescript-variable.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/.bin/tsc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/.bin/tsc.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/.bin/tsc.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/.bin/tsserver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/.bin/tsserver.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/.bin/tsserver.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/.package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/SECURITY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/ThirdPartyNoticeText.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/bin/tsc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/bin/tsserver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/cancellationToken.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/cs/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/de/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/dynamicImportCompat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/es/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/fr/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/it/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/ja/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/ko/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.dom.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.dom.iterable.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.collection.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.core.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.generator.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.iterable.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.promise.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.proxy.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.reflect.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.symbol.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2016.array.include.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2016.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2016.full.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2017.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2017.full.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2017.intl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2017.object.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2017.string.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2018.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2018.full.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2018.intl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2018.promise.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2018.regexp.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2019.array.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2019.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2019.full.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2019.intl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2019.object.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2019.string.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2019.symbol.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.bigint.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.date.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.full.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.intl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.number.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.promise.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.string.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2021.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2021.full.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2021.intl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2021.promise.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2021.string.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2021.weakref.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2022.array.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2022.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2022.error.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2022.full.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2022.intl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2022.object.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2022.sharedmemory.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es2022.string.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es5.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.es6.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.esnext.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.esnext.full.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.esnext.intl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.esnext.promise.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.esnext.string.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.esnext.weakref.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.scripthost.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.webworker.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.webworker.importscripts.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/lib.webworker.iterable.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/pl/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/protocol.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/pt-br/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/ru/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/tr/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/tsc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/tsserver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/tsserverlibrary.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/tsserverlibrary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/typesMap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/typescript.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/typescript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/typescriptServices.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/typescriptServices.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/typingsInstaller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/watchGuard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/zh-cn/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/lib/zh-tw/diagnosticMessages.generated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/node_modules/typescript/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript-variable/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2bcD9WZVi6p6Rg3bkTL9YmFILhK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Codegym\\module-05-Web Front-end-Dev. with ReactJS\\lession-01\\typescript-promise\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b2be0b2-f8da-4ade-b0af-ff4bcd20e369" name="Changes" comment="" />
+      <created>1706505322698</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706505322698</updated>
+      <workItem from="1706505323733" duration="1405000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main.js" />
+      </list>
+    </option>
+  </component>
+</project>
