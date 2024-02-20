@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VN Express with Tailwind</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+  </head>
+  <body>
+    <div class="container border">
+      <header class="border text-gray-500">
+        <div
+          class="top-nav border w-4/5 mx-auto grid grid-cols-11 gap-4 items-center"
+        >
+          <div
+            class="left-top-nav grid col-span-5 grid-cols-9 gap-2 items-center"
+          >
+            <img
+              class="w-44 col-span-3"
+              src="https://s1.vnecdn.net/vnexpress/restruct/i/v860/v2_2019/pc/graphics/logo-tet-2024.svg"
+              alt=""
+            />
+            <div class="date-time col-span-3 pl-5">Thứ năm, 1/2/2024</div>
+            <div class="location-weather col-span-3 flex">
+              <select
+                id="locations"
+                class="border-gray-300 text-gray-900 text-sm dark:text-black"
+              >
+                <option selected>TP.HCM</option>
+                <option value="HN">Hà Nội</option>
+                <option value="DN">Đà Nẵng</option>
+                <option value="CT">Cần Thơ</option>
+                <option value="CM">Cà Mau</option>
+              </select>
+              <span class="weather pl-3">30<sup>o</sup>C</span>
+            </div>
+          </div>
+          <div class="center-top-nav col-span-1"></div>
+          <div class="right-top-nav col-span-5 grid grid-cols-6">
+            <div class="news col-span-4 grid grid-cols-10">
+              <div class="latest-news col-span-3">Mới nhất</div>
+              <div class="local-news col-span-4">Tin theo khu vực</div>
+              <div class="international-new col-span-3">International</div>
+            </div>
+            <div class="options col-span-2 pl-2 grid grid-cols-5">
+              <div class="search col-span-1"><i class="fas fa-search"></i></div>
+              <div class="login col-span-3">
+                <i class="fa-regular fa-user"></i
+                ><span class="pl-2">Đăng nhập</span>
+              </div>
+              <div class="alert col-span-1 pl-3">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <menu
+          class="border border w-11/12 mx-auto w-100 flex p-2 gap-5 items-center border-t border-b border-primary whitespace-nowrap"
+        >
+          <span class="text-sm" style="color: #757575"
+            ><i class="fa-solid fa-house"></i
+          ></span>
+          <span class="text-sm" style="color: black">Thời sự</span>
+          <span class="text-sm" style="color: black">Góc nhìn</span>
+          <span class="text-sm" style="color: black">Thế giới</span>
+          <span class="text-sm" style="color: black">Video</span>
+          <span class="text-sm" style="color: black">Podcasts</span>
+          <span class="text-sm" style="color: black">Kinh doanh</span>
+          <span class="text-sm" style="color: black">Bất động sản</span>
+          <span class="text-sm" style="color: black">Giải trí</span>
+          <span class="text-sm" style="color: black">Thể thao</span>
+          <span class="text-sm" style="color: black">Pháp luật</span>
+          <span class="text-sm" style="color: black">Giáo dục</span>
+          <span class="text-sm" style="color: black">Sức khoẻ</span>
+          <span class="text-sm" style="color: black">Đời sống</span>
+          <span class="text-sm" style="color: black">Du lịch</span>
+          <span class="text-sm" style="color: black">Số hoá</span>
+          <span class="text-sm" style="color: black">Xe</span>
+          <span class="text-sm" style="color: black">Ý kiến</span>
+          <span class="text-sm" style="color: black">Tâm sự</span>
+          <span class="text-sm" style="color: black">Thư giãn</span>
+          <span class="text-sm" style="color: #757575">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </menu>
+      </header>
+
+      <footer class="bg-white">
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div class="grid grid-cols-2 gap-7 px-4 py-6 lg:py-8 md:grid-cols-7">
+            <div>
+              <p
+                class="mb-3 text-base font-bold dark:text-black hover:underline cursor-pointer"
+              >
+                Trang chủ
+              </p>
+              <p
+                class="mb-3 text-base font-bold dark:text-black hover:underline cursor-pointer"
+              >
+                Video
+              </p>
+              <p
+                class="mb-3 text-base font-bold dark:text-black hover:underline cursor-pointer"
+              >
+                Podcasts
+              </p>
+              <p
+                class="mb-3 text-base font-bold dark:text-black hover:underline cursor-pointer"
+              >
+                Ảnh
+              </p>
+              <p
+                class="mb-3 text-base font-bold dark:text-black hover:underline cursor-pointer"
+              >
+                Infographics
+              </p>
+              <hr class="mb-3" />
+              <p
+                class="mb-3 text-base font-bold dark:text-black hover:underline cursor-pointer"
+              >
+                Mới nhất
+              </p>
+              <p
+                class="mb-3 text-base font-bold dark:text-black hover:underline cursor-pointer"
+              >
+                Xem nhiều
+              </p>
+              <p
+                class="mb-3 text-base font-bold dark:text-black hover:underline cursor-pointer"
+              >
+                Tin nóng
+              </p>
+            </div>
+
+            <div>
+              <ul class="dark:text-black font-small">
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Thời sự</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Góc nhìn</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Thế giới</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Kinh doanh</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Bất động sản</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Giải trí</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <ul class="dark:text-black font-small">
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Thể thao</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Pháp luật</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Giáo dục</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Sức khoẻ</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Đời sống</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Du lịch</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <ul class="dark:text-black font-small">
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Khoa học</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Số hoá</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Xe</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Ý kiến</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Tâm sự</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="hover:underline">Thư giãn</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="px-2" style="border-left: 1px solid rgb(178, 178, 178)">
+              <div>
+                <ul class="dark:text-black font-small">
+                  <li class="mb-3">
+                    <a href="#" class="hover:underline">Rao vặt</a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="#" class="hover:underline">Startup</a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="#" class="hover:underline">Mua ảnh vnexpress</a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="#" class="hover:underline">eBox</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="px-2 col-span-2"
+              style="border-left: 2px solid rgb(178, 178, 178)"
+            >
+              <div>
+                <ul class="dark:text-gray font-small">
+                  <li class="mb-3">
+                    <a href="#">Tải ứng dụng</a>
+                  </li>
+                  <div class="flex gap-2">
+                    <button
+                      class="bg-transparent hover:bg-gray-300 text-black-700 hover:text-white py-1 px-3 border border-gray-300 hover:border-transparent rounded flex"
+                    >
+                      <img
+                        width="20px"
+                        height="40px"
+                        class="mr-2"
+                        src="https://play-lh.googleusercontent.com/XEReFv_aetLFZq2VCYEUF6cMeHLwJ3eM_WMcjucGKwdKPm8ob1_ghAdltlMwnHMEsQk=w240-h480-rw"
+                      />VnExpress
+                    </button>
+                    <button
+                      class="bg-transparent hover:bg-gray-300 text-black-700 hover:text-white py-1 px-3 border border-gray-300 hover:border-transparent rounded flex"
+                    >
+                      <img
+                        width="20px"
+                        height="40px"
+                        class="mr-2"
+                        src="https://cdn2.iconfinder.com/data/icons/basic-thin-line-color/21/18-512.png"
+                      />International
+                    </button>
+                  </div>
+                  <li class="mt-3 pl-1 mb-1">
+                    <a href="#">Liên hệ</a>
+                  </li>
+                  <div class="flex gap-8">
+                    <a
+                      data-medium="Menu-LienHeToaSoan"
+                      title="Liên hệ tòa soạn"
+                      href="https://vnexpress.net/lien-he-toa-soan"
+                      class="mail"
+                      ><i class="fa-solid fa-envelope pl-1 mb-3"></i> Tòa
+                      soạn</a
+                    >
+                    <a
+                      data-medium="Menu-LienHeToaSoan"
+                      title="Liên hệ tòa soạn"
+                      href="https://vnexpress.net/lien-he-toa-soan"
+                      class="mail"
+                      ><i class="fa-solid fa-e ps-4"></i> Quảng cáo</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      data-medium="Menu-LienHeToaSoan"
+                      title="Liên hệ tòa soạn"
+                      href="https://vnexpress.net/lien-he-toa-soan"
+                      class="mail"
+                      ><i class="fa-solid fa-check pl-1"></i> Hợp tác bản
+                      quyền</a
+                    >
+                  </div>
+                </ul>
+                <div
+                  class="px-2 col-span-2 mt-4"
+                  style="border-bottom: 2px solid rgb(178, 178, 178)"
+                ></div>
+                <div class="flex-column">
+                  <p style="color: rgb(196, 200, 200)">Đường dây nóng</p>
+                  <div class="flex gap-12">
+                    <div>
+                      <span class="font-bold">083.888.0123</span>
+                      <p style="font-size: small">(Hà Nội)</p>
+                    </div>
+                    <div>
+                      <span class="font-bold">082.233.3555</span>
+                      <p style="font-size: small">(TP. Hồ Chí Minh)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="px-2 col-span-2 mb-3"
+            style="border-top: 1px solid rgb(178, 178, 178)"
+          ></div>
+
+          <div class="footer__bot mt-4 w-full">
+            <div class="flex items-center justify-between mx-auto">
+              <div class="flex gap-5">
+                <div class="footer__bot-top">
+                  <span class="text-gray-500">Báo điện tử</span>
+                </div>
+                <img
+                  class="footer__bot-img"
+                  src="https://s1.vnecdn.net/vnexpress/restruct/i/v860/v2_2019/pc/graphics/logo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="flex items-center space-x-4">
+                <a href="#" class="hover:underline">Điều khoản sử dụng</a>
+                <a href="#" class="hover:underline">Chính sách bảo mật</a>
+                <a href="#" class="hover:underline">Cookies</a>
+                <a href="#" class="hover:underline">RSS</a>
+                <span>Theo dõi VnExpress trên</span>
+                <a href="https://www.facebook.com/congdongvnexpress/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/VnEnews"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCVRqZH5QnrnbMWhElPBD-MQ?sub_confirmation=1"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="px-2 col-span-2 mt-4"
+              style="border-top: 1px solid gray"
+            ></div>
+
+            <div class="flex mt-4 w-4/5">
+              <ul class="w-1/3">
+                <li class="font-bold mb-1">
+                  Báo tiếng Việt nhiều người xem nhất
+                </li>
+                <li>Thuộc Bộ Khoa học và Công nghệ</li>
+                <li>Số giấy phép: 548/GP-BTTTT ngày 24/08/2021</li>
+              </ul>
+
+              <ul class="w-1/3 ms-20">
+                <li class="mb-1">Tổng biên tập: Phạm Hiếu</li>
+                <li>
+                  Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, Dịch
+                  Vọng Hậu, Cầu Giấy, Hà Nội
+                </li>
+                <li>Điện thoại: 024 7300 8899 - máy lẻ 4500</li>
+              </ul>
+
+              <ul class="w-1/3 ms-20">
+                <li>© 1997-2024. Toàn bộ bản quyền thuộc VnExpress</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

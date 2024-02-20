@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mazii 辞書</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .relative:hover .origin-top-right {
+        display: block;
+      }
+
+      .origin-top-right {
+        display: none;
+      }
+      input[type="text"] {
+        padding-left: 15px;
+        text-indent: 5px;
+        width: 700px;
+      }
+      .abc {
+        border: 1px solid #dddfe2;
+        padding: 5px;
+        min-width: 100px;
+        text-align: center;
+      }
+      .abc:hover {
+        cursor: pointer;
+      }
+      .abcd:checked + .abc {
+        background-color: #e3f0ff;
+        border-bottom: 2px solid #0571db;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container border">
+      <header class="w-full bg-purple-800 text-white">
+        <div class="container w-4/5 mx-auto py-2 flex">
+          <div class="flex justify-center items-center gap-5">
+            <a href="#" class="pt-1">
+              <img
+                height="40px"
+                width="116px"
+                src="https://mazii.net/assets/imgs/logo/mazii-logo.png"
+                alt="mazii"
+                title="Mazii"
+                class="mgt-10 border-none logo-img border"
+              />
+            </a>
+            <a
+              href="#"
+              class="hover:text-gray-300 border-solid rounded-full py-2 px-2"
+              style="background-color: rgb(147, 156, 252)"
+              ><i class="fa-solid fa-house me-1"></i>Tra cứu</a
+            >
+            <a href="#" class="hover:text-gray-300 border-solid rounded-full"
+              ><i class="fa-solid fa-language me-2 fa-xl"></i>Dịch</a
+            >
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-users me-1 fa-lg"></i>Cộng đồng</a
+            >
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-briefcase me-2 fa-lg"></i>Việc làm</a
+            >
+            <a href="#" class="hover:text-gray-300 me-20"
+              ><i class="fa-solid fa-binoculars fa-beat me-2 fa-lg"></i>Khám
+              phá</a
+            >
+          </div>
+
+          <div class="ms-20 me-15"></div>
+
+          <div class="ml-20 flex items-center">
+            <div class="relative inline-block text-left">
+              <button
+                id="language-button"
+                class="inline-flex justify-center w-full px-4 py-2 font-small text-white-700"
+              >
+                <img
+                  src="https://mazii.net/assets/imgs/flag/ic_vi_VN.png"
+                  alt="Language"
+                  class="w-5 h-auto"
+                  style="width: 25px"
+                />
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                id="language-menu"
+                class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+              >
+                <div
+                  class="py-1"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="language-button"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/flag/ic_vi_VN.png"
+                      alt="Vietnamese"
+                      class="w-5 h-auto mr-2"
+                    />
+                    Vietnamese
+                  </a>
+                  <hr class="mr-1" />
+                  <a
+                    href="#"
+                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/flag/ic_en_US.png"
+                      alt="English"
+                      class="w-5 h-auto mr-2"
+                    />
+                    English
+                  </a>
+                  <hr class="my-1" />
+                  <a
+                    href="#"
+                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/flag/ic_zh_CN.png"
+                      alt="Chinese"
+                      class="w-5 h-auto mr-2"
+                    />
+                    Chinese (Simplified)
+                  </a>
+                  <hr class="my-1" />
+                  <a
+                    href="#"
+                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/flag/ic_zh_TW.png"
+                      alt="Chinese"
+                      class="w-5 h-auto mr-2"
+                    />
+                    Chinese (Traditonal)
+                  </a>
+                  <hr class="my-1" />
+                  <a
+                    href="#"
+                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/flag/ic_ko_KR.png"
+                      alt="Korean"
+                      class="w-5 h-auto mr-2"
+                    />
+                    Korean
+                  </a>
+                  <hr class="my-1" />
+                  <a
+                    href="#"
+                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/flag/ic_id_ID.png"
+                      alt="Indonesian"
+                      class="w-5 h-auto mr-2"
+                    />
+                    Indonesian
+                  </a>
+                  <hr class="my-1" />
+                  <a
+                    href="#"
+                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/flag/ic_fr_FR.png"
+                      alt="French"
+                      class="w-5 h-auto mr-2"
+                    />
+                    French
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <a href="#"><i class="fa-solid fa-bell fa-lg fa-shake"></i></a>
+            </div>
+
+            <div class="flex items-center">
+              <a
+                href="https://mazii.net/vi-VN/user/login"
+                class="copyright-right-item me-1 ms-6"
+                >Đăng nhập</a
+              >
+              <span class="mx-1">|</span>
+              <a
+                href="https://mazii.net/vi-VN/user/register"
+                class="copyright-right-item mx-1"
+                >Đăng ký</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container w-4/5 mx-auto py-1 flex" style="color: gray">
+        <a href="#" class="ml-2">JLPT</a>
+        <span class="mx-4" style="font-weight: 100">|</span>
+        <a href="#">Từ của tôi</a>
+        <span class="mx-4" style="font-weight: 100">|</span>
+        <a href="#">Luyện đọc</a>
+        <span class="mx-4" style="font-weight: 100">|</span>
+        <a href="#">Thi thử</a>
+        <span class="mx-4" style="font-weight: 100">|</span>
+        <a href="#">Từ điển mở</a>
+        <span class="mx-4" style="font-weight: 100">|</span>
+        <a href="#">Chuyên ngành</a>
+        <span class="mx-4" style="font-weight: 100">|</span>
+        <a href="#">Nâng cấp</a>
+        <span class="mx-4" style="font-weight: 100">|</span>
+
+        <div class="ms-20 me-10"></div>
+        <div class="ml-20 flex items-center gap-6 font-bold">
+          <a
+            href="https://apps.apple.com/us/app/mazii-dict-to-learn-japanese/id933081417"
+            ><span><i class="fa-brands fa-apple fa-lg"></i></span
+          ></a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.mazii.dictionary&hl=vi-VN&pli=1"
+            ><span><i class="fa-brands fa-google-play fa-lg"></i></span
+          ></a>
+          <a
+            href="https://apps.apple.com/us/app/japanese-translator-extention/id1579624904?mt=12"
+            ><span><i class="fa-brands fa-safari fa-lg"></i></span
+          ></a>
+          <a
+            href="https://chrome.google.com/webstore/detail/translate-japanese-mazii/lkjffochdceoneajnigkbdddjdekhojj"
+            ><span><i class="fa-brands fa-chrome fa-lg"></i></span>
+          </a>
+          <a
+            href="https://addons.mozilla.org/vi/firefox/addon/japanese-dictionary-mazii/"
+            ><span><i class="fa-brands fa-firefox fa-lg"></i></span
+          ></a>
+          <span style="font-weight: 100">|</span>
+          <a href="#"
+            ><span><i class="fa-solid fa-gear fa-lg"></i></span
+          ></a>
+        </div>
+      </div>
+
+      <hr class="w-full my-1" />
+
+      <main class="container w-4/5 mx-auto py-2 flex">
+        <div class="w-40 mt-2 items-center">
+          <div class="relative inline-block text-left">
+            <button
+              id="language-button"
+              class="inline-flex justify-center w-full px-4 py-2 font-small text-white-700 rounded-full bg-purple-200"
+            >
+              Nhật - Việt
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 ml-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div
+              id="language-menu"
+              class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+            >
+              <div
+                class="py-1"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="language-button"
+              >
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                >
+                  Nhật - Việt
+                </a>
+                <hr class="mr-1" />
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                >
+                  Nhật - Anh
+                </a>
+                <hr class="my-1" />
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                >
+                  Nhật - Trung(Giản)
+                </a>
+                <hr class="my-1" />
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                >
+                  Nhật - Trung(Phồn)
+                </a>
+                <hr class="my-1" />
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                >
+                  Nhật - Hàn
+                </a>
+                <hr class="my-1" />
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                >
+                  Nhật - Indonesia
+                </a>
+                <hr class="my-1" />
+                <a
+                  href="#"
+                  class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                >
+                  Nhật - Philipino
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative flex items-center">
+          <input
+            type="text"
+            id="search-text-box"
+            class="px-10 py-2 mt-2 border border-gray-300 rounded-full"
+            placeholder="日本, nihon, Nhật Bản"
+          />
+          <div class="flex mb-10">
+            <button
+              type="button"
+              aria-label="voice"
+              id="show-voice"
+              title="Voice"
+              class="absolute right-20 mr-20 mb-10"
+              style="width: 70px"
+            >
+              <img
+                src="https://mazii.net/assets/imgs/icon/ic_voice.png"
+                alt="voice"
+                class="icon-24 mt-3"
+                style="height: 25px"
+              />
+            </button>
+
+            <button
+              type="button"
+              aria-label="icon"
+              id="show-icon"
+              title="Icon"
+              class="absolute right-11 mr-20 mb-10"
+              style="width: 110px; height: 50px"
+            >
+              部
+            </button>
+
+            <button
+              type="button"
+              aria-label="icon"
+              id="show-icon"
+              title="Icon"
+              class="absolute right-12 mr-20 mb-10"
+              style="height: 50px"
+            >
+              <span><i class="fa-solid fa-pen-to-square"></i></span>
+            </button>
+
+            <button
+              type="button"
+              aria-label="icon"
+              id="show-icon"
+              title="Icon"
+              class="absolute right-3 mr-20 mb-10"
+              style="height: 50px; width: 10px"
+            >
+              <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+            </button>
+
+            <button
+              type="button"
+              aria-label="icon"
+              id="show-icon"
+              title="Icon"
+              class="absolute right-0.5 mr-10 mb-10"
+              style="height: 50px"
+            >
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <div class="search-content w-4/5 mx-auto py-2 flex">
+        <input type="radio" name="abcd" class="hidden abcd" id="1" />
+        <label class="abc" for="1">Từ vựng</label>
+        <input type="radio" name="abcd" class="hidden abcd" id="2" />
+        <label class="abc" for="2">Hán tự</label>
+        <input type="radio" name="abcd" class="hidden abcd" id="3" />
+        <label class="abc" for="3">Câu</label>
+        <input type="radio" name="abcd" class="hidden abcd" id="4" />
+        <label class="abc" for="4">Ngữ pháp</label>
+        <input type="radio" name="abcd" class="hidden abcd" id="5" />
+        <label class="abc" for="5">Nhật - Nhật</label>
+      </div>
+
+      <div
+        class="px-2 col-span-2 mt-4"
+        style="border-top: 1px solid #dddfe2"
+      ></div>
+
+      <footer>
+        <div class="mx-auto w-4/5 max-w-screen-xl">
+          <div class="grid grid-cols-3 gap-5 px-4 py-6 lg:py-8 md:grid-cols-4">
+            <div>
+              <p class="mb-6 text-base font-bold dark:text-black text-lg">
+                Về Mazii
+              </p>
+              <p
+                class="mb-5 text-base dark:text-black hover:underline cursor-pointer"
+              >
+                Email: support@mazii.net
+              </p>
+              <p class="mb-5 text-base dark:text-black">
+                Hotline: +(84) 37 773 8144
+              </p>
+              <p
+                class="mb-5 text-base dark:text-black hover:underline cursor-pointer"
+              >
+                Đối tác
+              </p>
+              <p
+                class="mb-5 text-base dark:text-black hover:underline cursor-pointer"
+              >
+                Trợ giúp
+              </p>
+              <p class="mb-5 dark:text-black hover:underline cursor-pointer">
+                Báo lỗi
+              </p>
+              <p class="mb-5 dark:text-black hover:underline cursor-pointer">
+                Điều khoản sử dụng
+              </p>
+              <p class="mb-5 dark:text-black hover:underline cursor-pointer">
+                Quyền riêng tư
+              </p>
+              <img
+                src="https://mazii.net/assets/imgs/icon/logoSaleNoti.png"
+                alt="Image"
+                style="height: 50px; width: 150px"
+                class="cursor-pointer brightness-100 hover:brightness-105"
+              />
+            </div>
+
+            <div class="ml-15">
+              <ul class="dark:text-black font-small">
+                <li class="mb-3">
+                  <p class="mb-6 font-bold dark:text-black text-lg">
+                    Theo dõi chúng tôi
+                  </p>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="hover:underline">Facebook</a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="hover:underline">Youtube</a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="hover:underline">Instagram</a>
+                </li>
+                <li class="mb-8">
+                  <a href="#" class="hover:underline">Tiktok</a>
+                </li>
+                <li>
+                  <p class="mb-4 font-bold dark:text-black text-xl">
+                    Sản phẩm khác
+                  </p>
+                </li>
+                <li>
+                  <p
+                    class="mb-2 text-base font-bold dark:text-black hover:underline cursor-pointer"
+                  >
+                    Easy Japanese
+                  </p>
+                  <p class="mb-3 text-sm text-gray-500">
+                    Học tiếng Nhật qua đọc báo
+                  </p>
+                  <p
+                    class="mb-2 text-base font-bold dark:text-black hover:underline cursor-pointer"
+                  >
+                    HeyJapan
+                  </p>
+                  <p class="mb-3 text-sm text-gray-500">
+                    Học tiếng Nhật từ con số 0
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ml-15">
+              <ul class="dark:text-black font-small">
+                <li class="mb-3">
+                  <p class="mb-6 font-bold dark:text-black text-lg">
+                    Chính sách giao dịch
+                  </p>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://mazii.net/guide/huong-dan-mua-hang.html"
+                    class="hover:underline"
+                    >Hướng dẫn mua hàng trực tuyến</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://mazii.net/guide/chinh-sach-thanh-toan.html"
+                    class="hover:underline"
+                    >Chính sách thanh toán</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://mazii.net/guide/chinh-sach-van-chuyen.html"
+                    class="hover:underline"
+                    >Chính sách vận chuyển, giao nhận</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://mazii.net/guide/chinh-sach-kiem-hang.html"
+                    class="hover:underline"
+                    >Chính sách kiểm hàng</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://mazii.net/guide/chinh-sach-bao-mat-thong-tin.html"
+                    class="hover:underline"
+                    >Chính sách bảo mật thông tin cá nhân</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://mazii.net/guide/giai-quyet-khieu-nai.html"
+                    class="hover:underline"
+                    >Quy trình tiếp nhận và giải quyết khiếu nại</a
+                  >
+                </li>
+                <li class="mb-6">
+                  <a
+                    href="https://mazii.net/guide/chinh-sach-doi-tra.html"
+                    class="hover:underline"
+                    >Chính sách đổi trả, hoàn tiền</a
+                  >
+                </li>
+                <li>
+                  <p class="mb-6 font-bold dark:text-black text-lg">
+                    Tính năng khác
+                  </p>
+
+                  <a
+                    href="https://mazii.net/vi-VN/convert-name"
+                    class="dark:text-black text-sm cursor-pointer hover:underline"
+                  >
+                    Chuyển tên
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ml-5">
+              <ul class="dark:text-gray font-small">
+                <li class="mb-8">
+                  <p class="font-bold dark:text-black text-lg">
+                    Liên hệ với chung tôi
+                  </p>
+                </li>
+                <div class="flex gap-2">
+                  <img
+                    src="https://mazii.net/assets/imgs/icon/ic_fb2.png"
+                    class="ml-1 cursor-pointer brightness-100 hover:brightness-105"
+                  />
+                  <img
+                    src="https://mazii.net/assets/imgs/icon/ic_zalo2.png"
+                    class="ml-3 cursor-pointer brightness-100 hover:brightness-105"
+                  />
+                  <img
+                    src="https://mazii.net/assets/imgs/icon/ic_line3.png"
+                    class="ml-3 cursor-pointer brightness-100 hover:brightness-105"
+                  />
+                </div>
+                <li class="mt-8 pl-1 mb-1">
+                  <p class="font-bold dark:text-black text-lg">Tải ứng dụng</p>
+                </li>
+                <div class="mt-10 flex gap-8">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.mazii.dictionary"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/icon/ic_gg_play2.png"
+                      style="height: 45px"
+                    />
+                  </a>
+                </div>
+                <div class="mt-2 flex gap-8">
+                  <a
+                    href="https://apps.apple.com/us/app/mazii-dict-to-learn-japanese/id933081417"
+                  >
+                    <img
+                      src="https://mazii.net/assets/imgs/icon/ic_app_store2.png"
+                      style="height: 45px"
+                    />
+                  </a>
+                </div>
+              </ul>
+
+              <div class="mt-8 flex-column">
+                <p class="font-bold dark:text-black text-lg">Tiện ích</p>
+                <div class="mt-6 flex gap-2" style="height: 45px">
+                  <img
+                    src="https://mazii.net/assets/imgs/icon/ic_chrome.png"
+                    class="ml-1 cursor-pointer brightness-100 hover:brightness-105"
+                  />
+                  <img
+                    src="https://mazii.net/assets/imgs/icon/ic_safari_color.png"
+                    class="ml-3 cursor-pointer brightness-100 hover:brightness-105"
+                  />
+                  <img
+                    src="https://mazii.net/assets/imgs/icon/ic_firefox_color.png"
+                    class="ml-3 cursor-pointer brightness-100 hover:brightness-105"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-4/5 mt-4 mx-auto"
+          style="border-top: 1px solid #e3f0ff"
+        ></div>
+
+        <div class="footer__bot mt-4 w-full mb-10">
+          <div class="flex justify-center">
+            <p class="mb-2 text-base">CÔNG TY CỔ PHẦN CÔNG NGHỆ EUP</p>
+          </div>
+
+          <div class="flex justify-center">
+            <p class="mb-2 text-sm">
+              Địa chỉ trụ sở: Phòng 802, Tầng 8, Toà nhà 315 Trường Chinh,
+              Phường Khương Mai, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam
+            </p>
+          </div>
+
+          <div class="flex justify-center">
+            <p class="mb-2 text-sm">
+              Mã số thuế: 0107482236 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội
+              cấp ngày 23/06/2016.
+            </p>
+          </div>
+
+          <div class="flex justify-center">
+            <p class="mb-2 text-sm">
+              Giấy phép số: 67/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày
+              02 tháng 02 năm 2018;
+            </p>
+          </div>
+
+          <div class="flex justify-center">
+            <p class="text-sm">Copyright © 2016</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./firebase.js"></script>
+  </body>
+</html>
